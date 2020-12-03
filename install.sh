@@ -1,14 +1,14 @@
 #!/bin/bash
 echo -e '\e[36m[+] Instalando as seguintes ferramentas: \e[39m'
 echo ''
-echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb... \e[39m'
+echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb, Nikto... \e[39m'
 echo ''
 
 
 ## Efetuando os downloads e a instalação das ferramentas ##
 apt update && apt upgrade -y
 apt autoremove -y
-apt install net-tools nmap telnet curl netcat plank sqlmap default-jre default-jdk python3 golang john aircrack-ng extract exiftool whois dirb -y
+apt install net-tools nmap telnet curl netcat plank sqlmap default-jre default-jdk python3 golang john aircrack-ng extract exiftool whois dirb nikto -y
 apt update && apt upgrade -y
 apt autoremove -y
 apt install python3-pip
