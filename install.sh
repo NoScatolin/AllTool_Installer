@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e '\e[36m[+] Instalando as seguintes ferramentas: \e[39m'
 echo ''
-echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb, Nikto... \e[39m'
+echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb, Nikto, Sublime Text... \e[39m'
 echo ''
 
 
@@ -14,6 +14,10 @@ apt autoremove -y
 apt install python3-pip
 pip3 install impacket
 snap install amass
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+apt update && apt install sublime-text -y
 
 
 ## Indo para o diretório /usr/share ##
