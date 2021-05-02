@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e '\e[36m[+] Instalando as seguintes ferramentas: \e[39m'
 echo ''
-echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb, Nikto, Sublime Text, NBTScan, GoBuster, Samba, SMBClient, Flameshot... \e[39m'
+echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb, Nikto, Sublime Text, NBTScan, GoBuster, Samba, SMBClient, Flameshot, Hakrawler... \e[39m'
 echo ''
 
 
@@ -30,6 +30,10 @@ git clone https://github.com/tomnomnom/httprobe
 git clone https://github.com/FortyNorthSecurity/EyeWitness
 git clone https://github.com/noscatolin/massRECON
 
+
+##  Efetuando a instalação do Hakrawler ##
+go get github.com/hakluke/hakrawler
+echo "alias hakrawler='~/go/bin/hakrawler'" >> ~/.bashrc
 
 ## Efetuando a instalação do HTTProbe ##
 cd httprobe
