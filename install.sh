@@ -28,7 +28,7 @@ cd /usr/share/
 git clone https://github.com/CiscoCXSecurity/enum4linux
 git clone https://github.com/tomnomnom/httprobe
 git clone https://github.com/FortyNorthSecurity/EyeWitness
-git clone https://github.com/noscatolin/massRECON
+git clone https://github.com/xcatolin/massRECON
 
 
 ##  Efetuando a instalação do Hakrawler ##
