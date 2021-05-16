@@ -1,14 +1,14 @@
 #!/bin/bash
 echo -e '\e[36m[+] Instalando as seguintes ferramentas: \e[39m'
 echo ''
-echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb, Nikto, Sublime Text, NBTScan, GoBuster, Samba, SMBClient, Flameshot, Hakrawler, Snap... \e[39m'
+echo -e '\e[36m ◉ Net-Tools, Nmap, Telnet, cURL, NetCat, Plank, SQLmap, Java, Python, Golang, Pip, Impacket, aMASS, Enum4Linux, HTTProbe, EyeWitness, massRECON, John, AirCrack-NG, Extract, ExifTool, WhoIs, Dirb, Nikto, Sublime Text, NBTScan, GoBuster, Samba, SMBClient, Flameshot, Hakrawler, Snap, Plank, RedShift, Metasploit... \e[39m'
 echo ''
 
 
 ## Efetuando os downloads e a instalação das ferramentas ##
 apt update && apt upgrade -y
 apt autoremove -y
-apt install net-tools nmap telnet curl netcat plank sqlmap default-jre default-jdk python3 golang john aircrack-ng extract exiftool whois dirb nikto nbtscan gobuster samba smbclient flameshot snapd -y
+apt install net-tools nmap telnet curl netcat plank sqlmap default-jre default-jdk python3 golang john aircrack-ng extract exiftool whois dirb nikto nbtscan gobuster samba smbclient flameshot snapd redshift redshift-gtk plank -y
 apt update && apt upgrade -y
 apt autoremove -y
 apt install python3-pip
@@ -18,6 +18,12 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 sudo apt-get install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 apt update && apt install sublime-text -y
+
+
+## Instalando Metasploit ##
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
 
 
 ## Indo para o diretório /usr/share ##
